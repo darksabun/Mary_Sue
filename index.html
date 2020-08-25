@@ -38,6 +38,7 @@
                         <ul>
                             <li><a href="/table/">27,934B-JOY</a></li>
                             <li><a href="/table/stelladlc.html">Stella DLC</a></li>
+                            <li><a href="/table/tablelist.html">Table List</a></li>
                         </ul>
                     </li>
                     <li><a href="/Mary_Sue/">Mary_Sue</a></li>
@@ -88,7 +89,7 @@
                                         <td>ΣS_25+</td>
                                         <td>★25以上</td>
                                     </tr>
-			            <tr>
+                                    <tr>
                                         <td>ΣS_X</td>
                                         <td>ゴミ箱</td>
                                     </tr>
@@ -133,62 +134,61 @@
     <script src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/natural.js"></script>
     <script src="/assets/js/table.js"></script>
     <script>
-        var tableColumns = [
-        {
-            "title": "Level",
-            "width": "1%",
-            "data": "level",
-            "type": "natural-nohtml",
-            "render": tableData.tableLevel
-        },
-        {
-            "title": "Score",
-            "width": "1%",
-            "data": "md5",
-            "orderable": false,
-            "searchable": false,
-            "render": tableData.tableScore
-        },
-        {
-            "title": "Movie",
-            "width": "1%",
-            "data": "movie_link",
-            "orderable": false,
-            "searchable": false,
-            "render": tableData.tableMovie
-        },
-        {
-            "title": "Title<br>(IR)",
-            "width": "35%",
-            "data": "title",
-            "render": tableData.tableTitle
-        },
-        {
-            "title": "Artist<br>(Song DL)",
-            "width": "35%",
-            "data": "artist",
-            "render": tableData.tableArtist
-        },
-        {
-            "title": "DL",
-            "width": "1%",
-            "data": "name_diff",
-            "orderable": false,
-            "searchable": false,
-            "render": tableData.tablePattern
-        },
-        {
-            "title": "Date",
-            "width": "5%",
-            "data": "date",
-            "render": tableData.tableDate
-        },
-        {
-            "title": "Comment",
-            "width": "30%",
-            "data": "comment"
-        },
-    ];
+        var tableColumns = [{
+                "title": "Level",
+                "width": "1%",
+                "data": "level",
+                "type": "natural-nohtml",
+                "render": tableData.tableLevel
+            },
+            {
+                "title": "Score",
+                "width": "1%",
+                "data": "md5",
+                "orderable": false,
+                "searchable": false,
+                "render": tableData.tableScore
+            },
+            {
+                "title": "Movie",
+                "width": "1%",
+                "data": "movie_link",
+                "orderable": false,
+                "searchable": false,
+                "render": tableData.tableMovie
+            },
+            {
+                "title": "Title<br>(IR)",
+                "width": "35%",
+                "data": "title",
+                "render": tableData.tableTitle
+            },
+            {
+                "title": "Artist<br>(Song DL)",
+                "width": "35%",
+                "data": "artist",
+                "render": tableData.tableArtist
+            },
+            {
+                "title": "DL",
+                "width": "1%",
+                "data": "name_diff",
+                "orderable": false,
+                "searchable": false,
+                "render": tableData.tablePattern
+            },
+            {
+                "title": "Date",
+                "width": "5%",
+                "data": "date",
+                "render": tableData.tableDate
+            },
+            {
+                "title": "Comment",
+                "width": "30%",
+                "data": "comment"
+            },
+        ];
     </script>
 
 </body>
