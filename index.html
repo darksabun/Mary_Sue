@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css">
     <link rel="stylesheet" href="/assets/css/table.css">
-    <link rel="stylesheet" href="./css/marysue.css">
 </head>
 
 <body class="no-sidebar is-preload">
@@ -104,7 +103,7 @@
                             <textarea name="changelog" id="changelog" cols="50" rows="8" readonly></textarea>
                         </p>
                         <div class="table_diff table-wrapper">
-                            <table id="table_int" class="display compact"></table>
+                            <table id="table_int" class="display"></table>
                         </div>
                     </article>
                 </div>
@@ -142,7 +141,7 @@
                 "render": tableData.tableLevel
             },
             {
-                "title": "Score",
+                "title": "<i class='fas fa-lg fa-music'></i>",
                 "width": "1%",
                 "data": "md5",
                 "orderable": false,
@@ -150,7 +149,7 @@
                 "render": tableData.tableScore
             },
             {
-                "title": "Movie",
+                "title": "<i class='fas fa-lg fa-play'></i>",
                 "width": "1%",
                 "data": "movie_link",
                 "orderable": false,
@@ -159,13 +158,13 @@
             },
             {
                 "title": "Title<br>(IR)",
-                "width": "35%",
+                "width": "30%",
                 "data": "title",
                 "render": tableData.tableTitle
             },
             {
                 "title": "Artist<br>(Song DL)",
-                "width": "35%",
+                "width": "30%",
                 "data": "artist",
                 "render": tableData.tableArtist
             },
@@ -185,7 +184,7 @@
             },
             {
                 "title": "Comment",
-                "width": "30%",
+                "width": "35%",
                 "data": "comment"
             },
         ];
