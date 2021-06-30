@@ -10,12 +10,12 @@
     <link href="/assets/css/styles.css" rel="stylesheet">
     <link href="/assets/css/table.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">DARKSABUN</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <a class="navbar-brand ps-3" href="/">DARKSABUN</a><button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
     </nav>
     <div id="layoutSidenav">
         <!-- Nav bar -->
@@ -28,7 +28,7 @@
         <!-- Main Contents -->
         <div id="layoutSidenav_content">
             <main>
-                <div class="container-fluid">
+                <div class="container-fluid px-4">
                     <h1 class="mt-4">Mary_Sue難易度表</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item">Mary_Sue BMS Table</li>
@@ -36,7 +36,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="diffflame table table-sm text-gray-900 font-weight-bold table-striped">
+                                <table class="diffflame table table-sm text-gray-900 fw-bold table-striped">
                                     <colgroup>
                                         <col style="width: 125px">
                                         <col style="width: 125px">
@@ -64,11 +64,14 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <p id="update"></p>
-                            <div class="mb-4 lang-ko text-secret">흔히 볼 수 없는 곡들의 차분 위주로 제작중입니다.<br>
-                                빨간 건 난이도표에 제안됐으나 떨어진 것들, 파란 건 난이도표에 등재된 것입니다.</div>
-                            <div class="mb-4 lang-jp lang-en text-secret">珍しい曲の差分を、主に作っています。<br>
-                                赤いのは提案されたもので、青いのは登載されたものです。</div>
+                            <p class="lang-ko text-secret">
+                                흔히 볼 수 없는 곡들의 차분 위주로 제작중입니다.<br>
+                                빨간 건 난이도표에 제안됐으나 떨어진 것들, 파란 건 난이도표에 등재된 것입니다.
+                            </p>
+                            <p class="lang-jp lang-en text-secret">
+                                珍しい曲の差分を、主に作っています。<br>
+                                赤いのは提案されたもので、青いのは登載されたものです。
+                            </p>
                             <p>
                                 <button class="btn btn-secondary btn-icon" id="show_log">View Changelog</button>
                             </p>
@@ -79,7 +82,7 @@
                     </div>
                     <div class="card mb-4">
                         <div class="card-header">
-                            <i class="fas fa-table mr-1"></i>
+                            <i class="fas fa-table me-1"></i>
                             Mary_Sue難易度表
                         </div>
                         <div class="card-body">
@@ -91,7 +94,7 @@
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid">
+                <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div>
                             Twitter: <a href="https://twitter.com/MarySue_BMS">MarySue_BMS</a> |
@@ -105,8 +108,8 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
     <script src="/assets/js/multi_lang.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/natural.js" crossorigin="anonymous"></script>
     <script src="/assets/js/scripts.js"></script>
     <script src="/assets/js/include_html.js"></script>
