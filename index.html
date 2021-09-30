@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://cdn.datatables.net/v/bs5/dt-1.11.2/datatables.min.css"
+      href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
@@ -68,10 +68,12 @@
                       <col style="width: 125px" />
                       <col style="width: 125px" />
                     </colgroup>
-                    <tbody>
+                    <thead>
                       <tr>
                         <th colspan="2">難易度表記(仮)</th>
                       </tr>
+                    </thead>
+                    <tbody>
                       <tr>
                         <td>ΣS_0-</td>
                         <td>★1以下</td>
@@ -96,7 +98,7 @@
                   파란색은 난이도표에 등재된 차분, 노란색은 제안되었던
                   차분입니다.
                 </p>
-                <p class="lang-jp lang-en text-secret">
+                <p class="lang-ja lang-en text-secret">
                   珍しい曲の差分を、主に作っています。<br />
                   青いのは難易度表に入った差分、黄色いのは提案された差分です。
                 </p>
@@ -146,15 +148,15 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.datatables.net/v/bs5/dt-1.11.2/datatables.min.js"
+      src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.datatables.net/plug-ins/1.11.2/sorting/natural.js"
+      src="https://cdn.datatables.net/plug-ins/1.11.3/sorting/natural.js"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/multi_lang.js"></script>
@@ -202,8 +204,8 @@
           title: "DL",
           width: "1%",
           data: "name_diff",
+          className: "text-nowrap",
           orderable: false,
-          searchable: false,
           render: tableData.tableChart,
         },
         {
