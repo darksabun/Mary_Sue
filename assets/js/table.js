@@ -256,6 +256,7 @@ const DEFAULT_COLUMNS = [
     width: "1%",
     data: "name_diff",
     className: "text-nowrap",
+    orderable: false,
     render: tableData.tableChart,
   },
   {
