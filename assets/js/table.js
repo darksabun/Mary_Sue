@@ -220,7 +220,6 @@ const DEFAULT_COLUMNS = [
     title: "Level",
     width: "1%",
     data: "level",
-    type: "natural",
     render: tableData.tableLevel,
   },
   {
