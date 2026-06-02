@@ -48,6 +48,7 @@ a:hover {
 }
 
 #tableDiff th {
+  font-family: var(--nc-font-sans) !important;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
