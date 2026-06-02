@@ -1,4 +1,16 @@
 ﻿/* Main Layout */
+:root {
+  --nc-font-sans:
+    "Pretendard JP Variable", "Pretendard JP", Pretendard, -apple-system,
+    sans-serif;
+  --nc-font-mono:
+    "M PLUS 1 Code", "Nanum Gothic Coding", "Fira Code", monospace;
+}
+
+body {
+  max-width: 75%;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,7 +35,7 @@ a:hover {
 #changelogText {
   width: 100%;
   height: 25vh;
-  font-family: "Inter", sans-serif;
+  font-family: var(--nc-font-mono);
 }
 
 /* Chart Layout */

@@ -6,7 +6,7 @@ const languagePrefix =
 document.addEventListener("DOMContentLoaded", function () {
   async function getJSON() {
     const response = await fetch(
-      document.querySelector("meta[name=bmstable]").getAttribute("content")
+      document.querySelector("meta[name=bmstable]").getAttribute("content"),
     );
     const header = await response.json();
     document.getElementById("changelogText").value = "Loading...";
@@ -29,7 +29,7 @@ function makeBMSTable() {
     lengthChange: false,
 
     language: {
-      url: `//cdn.datatables.net/plug-ins/2.3.3/i18n/${languagePrefix}.json`,
+      url: `//cdn.datatables.net/plug-ins/2.3.8/i18n/${languagePrefix}.json`,
     },
 
     ajax: {
@@ -88,8 +88,8 @@ function makeFilter(table) {
     languagePrefix === "ko"
       ? "레벨별 필터: "
       : languagePrefix === "ja"
-      ? "レベルでフィルタ: "
-      : "Filter by Level: ";
+        ? "レベルでフィルタ: "
+        : "Filter by Level: ";
 
   const selectContainer = document.createElement("div");
   selectContainer.classList.add("dt-length");
@@ -138,28 +138,32 @@ const tableData = {
     return mark + data;
   },
 
+  tableMinIR: function (data) {
+    let MinIrUrl = `https://www.gaftalk.com/minir/#/viewer/song/${row.sha256}/0`;
+    return `<a href='${MinIrUrl}' target='_blank'>MinIR</a>`;
+  },
+
   tableTitle: function (data, type, row) {
-    let lr2irURL =
-      "http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=";
-    lr2irURL += row.md5;
-    return `<a href='${lr2irURL}' target='_blank'>${data}</a>`;
+    let lr2irUrl = "https://www.bms-ir.org/new/song?songmd5=";
+    lr2irUrl += row.md5;
+    return `<a href='${lr2irUrl}' target='_blank'>${data}</a>`;
   },
 
   tableScore: function (data) {
-    let scoreURL = "https://bms-score-viewer.pages.dev/view?md5=";
-    scoreURL += data;
+    let scoreUrl = "https://bms-score-viewer.pages.dev/view?md5=";
+    scoreUrl += data;
     if (data) {
-      return `<a href='${scoreURL}' target='_blank'>♪</a>`;
+      return `<a href='${scoreUrl}' target='_blank'>♪</a>`;
     } else {
       return "";
     }
   },
 
   tableMovie: function (data) {
-    let movieURL = "https://www.youtube.com/watch?v=";
+    let movieUrl = "https://www.youtube.com/watch?v=";
     if (data) {
-      movieURL += data.slice(-11);
-      return `<a href='${movieURL}' target='_blank'>▶</a>`;
+      movieUrl += data.slice(-11);
+      return `<a href='${movieUrl}' target='_blank'>▶</a>`;
     } else {
       return "";
     }
