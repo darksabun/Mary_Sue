@@ -266,7 +266,7 @@ const DEFAULT_COLUMNS = [
     title: "Date",
     width: "1%",
     data: "date",
-    className: "text-nowrap",
+    className: "text-nowrap font-monospace",
     render: tableData.tableDate,
   },
   {

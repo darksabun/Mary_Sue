@@ -93,3 +93,7 @@ table.dataTable.display tbody tr.state3 {
 .text-secret {
   display: none;
 }
+
+.font-monospace {
+  font-family: var(--nc-font-mono);
+}
